@@ -48,7 +48,7 @@ namespace PixelWorldsManager
                 Storyboard.SetTarget(fadeAnimation, ErrorText);
                 Storyboard.SetTargetProperty(fadeAnimation, new PropertyPath(TextBlock.OpacityProperty));
 
-                // Create and start the storyboard
+                
                 Storyboard storyboard = new Storyboard();
                 storyboard.Children.Add(fadeAnimation);
                 storyboard.Begin();
