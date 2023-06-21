@@ -1,0 +1,24 @@
+﻿<Window x:Class="PixelWorldsManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PixelWorldsManager"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="PixelWorldsAccountManager" Height="350" Width="500" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\yoans\source\repos\PixelWorldsManager\PixelWorldsManager\Images\bg1.jpg"/>
+        </Grid.Background>
+        <TextBlock FontFamily="Fonts/#Blocktopia" FontSize="30" Foreground="DarkTurquoise" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Pixel Worlds Account Manager" VerticalAlignment="Top" Height="110" Width="450" Margin="40,10,0,0"/>
+        <Button Content="Extract" x:Name="ExtractAccount" FontFamily="Fonts/#Blocktopia"  Background="DarkBlue" HorizontalAlignment="Left" Margin="40,171,0,0" VerticalAlignment="Top" Height="35" Width="125" BorderBrush="DarkBlue" Click="ExtractAccount_Click"/>
+        <Button Content="Load" x:Name="LoadAccount" FontFamily="Fonts/#Blocktopia"  Background="Firebrick" HorizontalAlignment="Left" Margin="319,171,0,0" VerticalAlignment="Top" Height="35" Width="126" Click="Button_Click" BorderBrush="Firebrick"/>
+        <TextBlock x:Name="ErrorText" FontFamily="Fonts/#Blocktopia" FontSize="30" Foreground="#FFD10000" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="110" Width="450" Margin="40,56,0,0"><Run Text="Uh Oh! An Exception Occurred!"/><LineBreak/><Run Text="Seems that you don't have any accounts!"/></TextBlock>
+        <TextBlock x:Name="ErrorJSON" FontFamily="Fonts/#Blocktopia" FontSize="30" Foreground="#FFD10000" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="110" Width="450" Margin="40,56,0,0"><Run Text="Uh Oh! An Exception Occurred!"/><LineBreak/><Run Text="Please run Pixel Worlds and login in any account!"/></TextBlock>
+        <TextBlock x:Name="LoadSuccessfully" FontFamily="Fonts/#Blocktopia" FontSize="29" Foreground="#32CD32" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="110" Width="450" Margin="50,65,0,0" Text="Account Loaded Successfully!"/>
+        <TextBlock x:Name="ExtractSuccessfully" FontFamily="Fonts/#Blocktopia" FontSize="29" Foreground="Blue" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="109" Width="450" Margin="40,65,0,0" Text="Account Extracted Successfully!"/>
+
+    </Grid>
+</Window>
