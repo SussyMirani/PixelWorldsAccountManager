@@ -1,1 +1,1 @@
-Simple Pixel Worlds Account Manager wrote on WPF
+Simple Pixel Worlds Account Manager on WPF
