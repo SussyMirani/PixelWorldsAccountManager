@@ -26,13 +26,11 @@ namespace PixelWorldsManager
             RegeditKey regedit = new RegeditKey();
             string cognitoString = regedit.CognitoAndLogin().Cognito;
             string lastLoginString = regedit.CognitoAndLogin().LastLogin;
-            var loggedOutString = regedit.CognitoAndLogin().LoggedOut;
 
             var AccountData = new AccountList
             {
                 CognitoIdentity = cognitoString,
-                lastLoginKey = lastLoginString,
-                loggedOut = loggedOutString
+                lastLoginKey = lastLoginString
             };
             var options = new JsonSerializerOptions
             {
