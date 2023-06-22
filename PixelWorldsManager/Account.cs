@@ -15,8 +15,6 @@ namespace PixelWorldsManager
     {
         public string CognitoIdentity { get; set; }
         public string lastLoginKey { get; set; }
-
-        public object loggedOut { get; set; }
     }
     internal class Account : MainWindow
     {
