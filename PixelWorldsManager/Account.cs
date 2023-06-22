@@ -52,7 +52,6 @@ namespace PixelWorldsManager
             AccountList accountList = JsonSerializer.Deserialize<AccountList>(jsonString);
             string getCognito = accountList.CognitoIdentity;
             string getLastLogin = accountList.lastLoginKey;
-            object getLoggedOut = accountList.loggedOut;
             byte[] CognitoBytes = Encoding.Default.GetBytes(getCognito);
             byte[] LastLoginBytes = Encoding.Default.GetBytes(getLastLogin);
             string lastLoginRegName = string.Empty;
